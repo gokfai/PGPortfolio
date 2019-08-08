@@ -23,18 +23,18 @@ ActiveRecord::Schema.define(version: 2019_08_06_012303) do
   end
 
   create_table "portfolios", force: :cascade do |t|
-    t.string "title"
-    t.string "subtitle"
-    t.text "body"
-    t.text "main_image"
-    t.text "thumb_image"
+    t.string   "title"
+    t.string   "subtitle"
+    t.text     "body"
+    t.text     "main_image"
+    t.text     "thumb_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "skills", force: :cascade do |t|
-    t.string "title"
-    t.integer "percent_utilized"
+    t.string   "title"
+    t.integer  "percent_utilized"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
