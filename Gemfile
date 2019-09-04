@@ -61,3 +61,5 @@ gem 'devise', '~> 4.7'
 gem 'jquery-rails'
 
 gem 'bootstrap', '~> 4.3.1'
+
+gem 'pg_view_tool', git: 'https://github.com/gokfai/pg_view_tool'

@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/gokfai/pg_view_tool
+  revision: ccbf9b0992261017acd4f46f0aa2837a757c0e7e
+  specs:
+    pg_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -216,6 +222,7 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
+  pg_view_tool!
   pry-byebug
   puma (~> 3.11)
   rails (~> 5.2.3)
