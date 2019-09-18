@@ -27,8 +27,8 @@
             loop: true,
             muted: true,
             poster: 'classroom-bkg.jpg'
-            )
-            %>
+          )
+          %>
 
           
           <%= render "shared/application_nav" %>
@@ -36,6 +36,8 @@
           <%= yield %>
 
           <%= render "shared/application_footer" %>
+
+          <%= render 'shared/alerts' %>
     
           <%= source_helper("application") %>
 
