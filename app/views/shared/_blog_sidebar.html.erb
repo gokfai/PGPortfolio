@@ -5,6 +5,15 @@
     and knowledge is a good place to start!</p>
   </div>
 
+  @side_bar_topics
+
+  <div class="sidebar-module">
+    <h4>Topics</h4>
+    <% @side_bar_topics.each do |topic| %>
+      <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+  </div>
+
   <div class="sidebar-module">
     <h4>Learn more</h4>
     <ol class="list-unstyled social-links">
