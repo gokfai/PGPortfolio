@@ -208,5 +208,21 @@ body {
   color: white;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
 
+.app-card-container > .card {
+  background: rgba(169, 169, 169, 0.75);
+  padding: 40px;
+}
 
+.profile-img {
+  border: 1px solid grey;
+  float: left;
+}
+
+.app-card-container a {
+  color: blue;
+}
