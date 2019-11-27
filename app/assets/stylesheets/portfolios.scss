@@ -2,9 +2,27 @@
 @import "jquery-ui";
 @import "gritter";
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+@font-face {
+  font-family: 'Assistant', sans-serif;
+  src:font-url('Assistant-Regular.ttf')
 }
+
+@font-face {
+  font-family: 'Long Cang';
+  src:font-url('LongCang-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src:font-url('Montserrat-Black.ttf')
+}
+
+body {
+  min-height: 65rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Montserrat', sans-serif
+}
+
+
 
 .navbar {
   margin-bottom: 0;
@@ -34,6 +52,15 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #f7f7f7;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Long Cang', cursive;
 }
 
 .card {
