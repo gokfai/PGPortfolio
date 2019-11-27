@@ -9,7 +9,8 @@
         <%= image_tag "PGprofilepic01.jpg", width: 250, alt: "Profile image", class: 'profile-img' %>
 
         <div class="skills">
-          <% @skills.each do |skill| %>
+          
+          <% @skills.sort_by(&:percent_utilized).reverse.each do |skill| %>
           <div class="skill">
               <h4><%= skill.title %></h4>
               <div class="progress">
@@ -36,15 +37,12 @@
        and constantly building bridges between what they already know 
        and what they are about to learn.<br></p>
 
-        <p>High quality education must be offered from childhood on into adult life.<br>
-          Professional development where language is fundamental to any successful career.</p>
-        <p>
-        In the classroom, I want to help unlock the students' ability to learn and grasp new and challenging concepts.<br>
-        In a language learning environment, I would like to teach you English.<br>
-        If you want to use Mandarin, Cantonese, or ASL to help you get there,<br>
-        I would be very excited to be your English instructor<br>
-        as these languages are all very dear to me and a part of my daily communication.
-        </p>
+        <p>Besides supporting students with their learning goals, I have also sought to acquire other skills including website development
+          using Ruby on Rails, with Java and HTML integration.<br>
+          Further professional endeavors include vehicle imports into Canada and general residential renovation trade skills.</p>
+        <p>Language learning has also been a primary goal for me, with an extensive background of ASL, Mandarin and Cantonese.
+          These skills have proved to be invaluable in the field of education, in addition to daily communication, cultural enrichment and
+          ongoing personal development.</p>
 
         <p>
           <button 
@@ -61,7 +59,7 @@
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
-            data-target="#jobHistory"
+            data-target="#education"
             aria-expanded="false"
             aria-controler="education"
           >
@@ -72,24 +70,25 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+              Education Assistant, Mandarin program, Calgary. Six years.
             </div>
             <div class="card card-block">
-              Job 2
+              Sole Proprieter, Window cleaning, painting, auto importation and detailing, Calgary. 10+ years.
             </div>
             <div class="card card-block">
-              Job 3
+              Program Assistance, Calgary & Ottawa, 1:1 support. Two years.
             </div>
+          </div>
 
-            <div class="collapse" id="education">
+          <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              Medicine Hat College, Education Assistant Certificate
             </div>
             <div class="card card-block">
-              School 2
+              Canadian Institude of English, TESOL and Second Language Acquisition Methodology in ASL
             </div>
             <div class="card card-block">
-              School 3
+              Various ASL, Mandarin and Paraprofessional workshops
             </div>
           </div>
         </p>
