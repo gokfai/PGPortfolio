@@ -6,16 +6,13 @@
  * Globals
  */
 
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
-body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #555;
-}
 
 h1, .h1,
 h2, .h2,
@@ -23,9 +20,15 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
+  font-family: 'Long Cang', cursive;
+}
+
+
+
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
 }
 
 
@@ -92,6 +95,7 @@ h6, .h6 {
 }
 .blog-title {
   margin-bottom: 0;
+  font-family: 'Long Cang', sans-serif;
   font-size: 2rem;
   font-weight: normal;
 }
@@ -189,4 +193,13 @@ h6, .h6 {
 
 .comment-name {
   font-weight: 700;
+}
+
+.blogcrumb a {
+  font-size: 1.25em; 
+  margin: 0px 10px 0px 10px;
+}
+
+.blog-sidebar-source {
+  margin-top: 20px;
 }

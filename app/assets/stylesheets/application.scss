@@ -30,11 +30,21 @@ a:hover {
 html,
 body {
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Long Cang', cursive;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -66,6 +76,7 @@ body {
  */
 
 .masthead {
+  z-index: 1;
   margin-bottom: 2rem;
 }
 
@@ -208,5 +219,32 @@ body {
   color: white;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
 
+.app-card-container > .card {
+  background: rgba(169, 169, 169, 0.75);
+  padding: 40px;
+}
 
+.profile-img {
+  border: 1px solid grey;
+  float: left;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}

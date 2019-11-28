@@ -2,19 +2,37 @@
 @import "jquery-ui";
 @import "gritter";
 
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+@font-face {
+  font-family: 'Assistant', sans-serif;
+  src:font-url('Assistant-Regular.ttf')
 }
+
+@font-face {
+  font-family: 'Long Cang';
+  src:font-url('LongCang-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src:font-url('Montserrat-Black.ttf')
+}
+
+body {
+  min-height: 65rem; /* Can be removed; just added for demo purposes */
+  font-family: 'Montserrat', sans-serif
+}
+
+
 
 .navbar {
   margin-bottom: 0;
 }
 
 .jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: #c9e6ff;
 }
 
 .jumbotron p:last-child {
@@ -36,9 +54,18 @@ body {
   background-color: #f7f7f7;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Long Cang', cursive;
+}
+
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;

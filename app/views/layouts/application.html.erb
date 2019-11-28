@@ -8,7 +8,13 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Long+Cang|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
     <meta name="keywords" content = "<%= @seo_keywords %>" />
+
+    <%= favicon_link_tag 'favicons/favicon-r01.ico' %>
 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -20,13 +26,14 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
 
+
           <%= video_tag(
-            'dryiceblur.mp4',
+            '',
             id: 'background',
             autoplay: true,
             loop: true,
             muted: true,
-            poster: 'classroom-bkg.jpg'
+            poster: 'dry-ice-img.png'
           )
           %>
 
@@ -38,8 +45,6 @@
           <%= render "shared/application_footer" %>
 
           <%= alerts %>
-    
-          <%= source_helper("application") %>
 
         </div>
       </div>
