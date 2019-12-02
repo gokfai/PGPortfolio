@@ -91,4 +91,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_cable.allowed_request_origins = ['https://vaspec-pgportfolio.herokuapp.com', 'http://vaspec-pgportfolio.herokuapp.com']
+  config.action_cable.url = "wss://vaspec-pgportfolio.herokuapp.com/cable"
 end
