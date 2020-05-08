@@ -203,3 +203,10 @@ h6, .h6 {
 .blog-sidebar-source {
   margin-top: 20px;
 }
+
+.blog-snippet {
+  max-height: 100px;
+  overflow: hidden;
+  background-color: rgb(227, 239, 251);
+  
+}
