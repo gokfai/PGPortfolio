@@ -3,9 +3,10 @@
 	<p class="blog-post-meta">Published <%= distance_of_time_in_words(blog.created_at, Time.now)%> ago</p>
 
 	<%= render partial: 'blogs/admin_actions', locals: { blog: blog } %>
-	<p class="blog-snippet">
-	  <%= blog.body %>
-	  <h5 class="h5"><%= link_to  "Click for more...", blog %></h5>
-	</p>
+			<%# <p class="blog-snippet"><%= markdown(blog.body) %>
+
+			<%# <%= markdown(blog.title)%>
+			<h5 class="h5"><%= link_to  "Click for more...", blog %></h5>
+			</p>
 	
 </div>
